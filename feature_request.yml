@@ -1,0 +1,20 @@
+name: 🚀 Solicitar Funcionalidad
+description: Sugiere una idea para este proyecto
+title: "[Feat]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿El problema está relacionado con algo frustrante?
+      description: Una descripción clara y concisa de cuál es el problema.
+      placeholder: "Me frustra cuando..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe la solución que te gustaría
+      description: ¿Qué debería pasar?
+    validations:
+      required: true
