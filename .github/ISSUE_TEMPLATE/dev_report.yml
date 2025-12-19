@@ -56,21 +56,11 @@ body:
       required: true
 
   - type: textarea
-    id: technical-details
-    attributes:
-      label: Detalles Técnicos
-      description: Información técnica relevante, tecnologías, componentes, o consideraciones especiales
-      placeholder: "Componentes a usar: HeroSection.astro\nDiseño: Penpot (Hero/Nav/Foot)\nLinks: Discord (permanente), Repo"
-      render: markdown
-    validations:
-      required: false
-
-  - type: textarea
     id: notes
     attributes:
       label: Notas Adicionales
       description: Cualquier información adicional o contexto relevante
-      placeholder: "Añade contexto, referencias, o consideraciones especiales..."
+      placeholder: "Añade contexto, referencias, tecnicismos, o consideraciones especiales..."
       render: markdown
     validations:
       required: false
