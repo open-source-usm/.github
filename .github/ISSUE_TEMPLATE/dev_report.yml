@@ -1,0 +1,111 @@
+name: 📋 Dev Report
+description: Template para reportar historias de usuario con criterios de aceptación y tareas de desarrollo
+title: "[DEV]: "
+labels: ["dev", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Historia de Usuario
+        Describe la funcionalidad desde la perspectiva del usuario final.
+
+  - type: input
+    id: user-role
+    attributes:
+      label: Como
+      description: ¿Qué tipo de usuario eres? (ej. visitante, administrador, colaborador)
+      placeholder: "visitante"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-want
+    attributes:
+      label: Quiero
+      description: ¿Qué funcionalidad o capacidad deseas?
+      placeholder: "entender de inmediato la propuesta de valor y tener un camino claro para unirme"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-goal
+    attributes:
+      label: Para
+      description: ¿Cuál es el objetivo o beneficio que buscas?
+      placeholder: "convertir mi interés en una acción concreta (unirme/colaborar) sin fricción ni dudas"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Criterios de Aceptación
+        Define las condiciones que deben cumplirse para considerar completada esta historia.
+
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: Criterios de Aceptación
+      description: Marca los criterios que aplican o añade los propios
+      options:
+        - label: El paso principal para unirse debe lograrse en un solo clic desde la portada
+        - label: El Hero debe incluir título, subtítulo y botones CTA visibles sin scroll
+        - label: Los botones de acción deben repetirse en secciones estratégicas sin saturar
+        - label: El diseño debe ser totalmente Responsive
+        - label: Las URLs de destino deben estar configuradas correctamente
+
+  - type: textarea
+    id: additional-criteria
+    attributes:
+      label: Criterios Adicionales
+      description: Añade otros criterios de aceptación específicos si es necesario
+      placeholder: "- [ ] Criterio adicional 1\n- [ ] Criterio adicional 2"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Tareas de Desarrollo
+
+  - type: checkboxes
+    id: dev-tasks
+    attributes:
+      label: Tareas
+      description: Lista de tareas técnicas para implementar la historia
+      options:
+        - label: Refinar diseño en Penpot
+        - label: Implementar componente principal
+        - label: Asegurar diseño Responsive
+        - label: Definir y configurar URLs de destino
+        - label: Pruebas de funcionalidad
+        - label: Revisión de código
+
+  - type: textarea
+    id: additional-tasks
+    attributes:
+      label: Tareas Adicionales
+      description: Añade otras tareas técnicas específicas
+      placeholder: "- [ ] Tarea adicional 1\n- [ ] Tarea adicional 2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Detalles Técnicos
+      description: Información técnica relevante, tecnologías, componentes, o consideraciones especiales
+      placeholder: "Componentes a usar: HeroSection.astro\nDiseño: Penpot (Hero/Nav/Foot)\nLinks: Discord (permanente), Repo"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notas Adicionales
+      description: Cualquier información adicional o contexto relevante
+      placeholder: "Añade contexto, referencias, o consideraciones especiales..."
+    validations:
+      required: false
